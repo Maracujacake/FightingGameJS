@@ -311,6 +311,7 @@ window.addEventListener('keydown', (event) => {
             playerOne.lastKey = 'a'
         break;
         case 'w':
+            if(playerOne.position.y > 250 )
             playerOne.velocity.y = -15;
         break;
         case ' ':
@@ -330,6 +331,7 @@ window.addEventListener('keydown', (event) => {
                 playerTwo.lastKey = 'ArrowLeft'
             break;
             case 'ArrowUp':
+                if(playerTwo.position.y > 250 )
                 playerTwo.velocity.y = -15;
             break;
             case 'ArrowDown':
