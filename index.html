@@ -1,0 +1,42 @@
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+
+    <div style="position: relative; display: inline-block;"> <!-- area da barra de  vida, temporizador-->
+        <div style="position: absolute; display: flex; width: 100%; align-items: center; padding: 20px;">
+
+
+            <div style=" border-top:4px solid white; border-bottom:4px solid white; border-left:4px solid white; position: relative; width: 100%; display: flex; justify-content: flex-end;">
+                <div style="background-color: #52525b; height: 30px; width: 100%;"></div> <!-- vida do playerTwo -->
+                <div id="playerOneHealth" style="position:absolute; background: #22c55e; top: 0; right: 0; bottom: 0; width: 100%;"></div>
+            </div> <!-- vida do playerOne -->
+
+
+            <div id="timer" style="font-family: 'Press Start 2P', cursive; border:4px solid white; color: white; background-color: black; width: 100px; height: 50px; flex-shrink: 0; display: flex; align-items: center; justify-content: center;">10</div> <!-- temporizador/cronometro -->
+
+
+            <div style="border-top:4px solid white; border-bottom:4px solid white; border-right:4px solid white; position: relative;width: 100%;">
+                <div style="background-color: #52525b; height: 30px;"></div>
+                <div id="playerTwoHealth" style="position:absolute; background: #22c55e; top: 0; right: 0; bottom: 0; left: 0;"></div>
+            </div> <!-- vida do playerTwo-->
+
+
+            <div></div>
+        </div>
+        <div id="display-text" style="position: absolute; color: black; display: none; align-items: center; justify-content: center;
+                    top: 0; right: 0; bottom: 0; left: 0; font-size: 25px;">Tie</div>
+        <canvas></canvas>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js" integrity="sha512-Mf/xUqfWvDIr+1B6zfnIDIiG7XHzyP/guXUWgV6PgaQoIFeXkJQR5XWh9fqAiCiRCpemabt3naV4jhDWVnuYDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./JS/utils.js"></script>
+    <script src="./JS/classes.js"></script>
+    <script src="index.js"></script>
+</body>
